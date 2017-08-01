@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="projects-wrapper">
+        <div class="projects-title">
+            <h4>video on the <span>world</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, assumenda delectus deleniti ea eligendi eos
+                fugiat molestiae neque numquam quaerat repellat repellendus temporibus veniam vitae.</p>
+        </div>
+        <div class="video-carousel">
+            <div class="slider_video_top">
+                <div class="slider_video_bottom" data-dot="<span></span>">
+                    <p>Application of Izodur House elements </p>
+                    <p>in Middle East - UAE</p>
+                    <span>
+                        <svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#69247c" d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"/></svg>
+                        Watch now
+                    </span>
+                </div>
+            </div>
+            <div class="slider_video_top" data-dot="<span></span>">
+                <div class="slider_video_bottom">
+                    <p>Application of Izodur House elements </p>
+                    <p>in Middle East - UAE</p>
+                    <span>
+                        <svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#69247c" d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"/></svg>
+                        Watch now
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="video_collection_wrapper">
+            <div class="follow_video_block">
+                <img src="{% static 'video_page/logo.png' %}" alt="">
+                <p>Izodur Video Project</p>
+                <p>This is Photoshop's version of Lorem Ipsum.
+                </p>
+                <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-theme="dark" data-count="hidden"></div>
+            </div>
+            <div class="wrap_block_video">
+                <div class="video_block">
+                    <div>
+                        <img src="{% static 'projects/proj-1.png' %}" alt="">
+                        <p>Application of Izodom</p>
+                    </div>
+                    <div>
+                        <img src="{% static 'projects/proj-7.png' %}" alt="">
+                        <p>Application of Izodom</p>
+                    </div>
+                    <div>
+                        <img src="{% static 'projects/proj-3.png' %}" alt="">
+                        <p>Application of Izodom</p>
+                    </div>
+                </div>
+                <div class="video_block">
+                    <div>
+                        <img src="{% static 'projects/proj-4.png' %}" alt="">
+                        <p>Application of Izodom</p>
+                    </div>
+                    <div>
+                        <img src="{% static 'projects/proj-5.png' %}" alt="">
+                        <p>Application of Izodom</p>
+                    </div>
+                    <div>
+                        <img src="{% static 'projects/proj-6.png' %}" alt="">
+                        <p>Application of Izodom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

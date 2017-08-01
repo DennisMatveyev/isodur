@@ -1,0 +1,14 @@
+/* ========= Connect dependencies ========= */
+@import "../constants/variables";
+@import "../constants/mixins";
+/* ========= End of Imports ========= */
+
+.header-wrapper { position: relative; }
+.header-banner-icon_white_retative {
+  display: block;
+  z-index: 99999;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+  background-color:#fdffff;
+}

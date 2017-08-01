@@ -1,0 +1,28 @@
+{
+  "name": "isodure",
+  "version": "1.0.0",
+  "description": "isodure workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --progress --profile --watch"
+  },
+  "author": "VR",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta",
+    "file-loader": "^0.10.0",
+    "node-sass": "^4.5.0",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^5.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "font-awesome-sass-loader": "^1.0.3",
+    "url-loader": "^0.5.7"
+  }
+}

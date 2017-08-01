@@ -1,0 +1,27 @@
+{% load staticfiles lang_tags i18n %}
+
+<footer class="footer-decoration_white">
+    <div class="footer-actions-wrapper_white">
+        <div class="footer-contact-wrapper_white">
+            <div class="social-box footer-soc-box">
+                <span class="phone footer-cl_white"> <span class="phone-ic"></span> (00 48) 43-823-89-47</span>
+                <span>|</span>
+                <span class="phone footer-cl_white"> <span
+                        class="phone-ic"></span> ul.Ceramicza 298-220 Zdushka WolaPoland</span>
+                <div class="social-icons">
+                    <a class="social-ic-common" title="facebook"><img src="{% static 'header/facebook.png' %}"
+                                                                      alt=""></a>
+                    <a class="social-ic-common" title="instagram"><img src="{% static 'header/instagram.png' %}" alt=""></a>
+                    <a class="social-ic-common" title="youtube"><img src="{% static 'header/form.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-language-wrapper_white">
+            {% get_available_languages as LANGUAGES %}
+            {% for language_code, language_name in LANGUAGES %}
+                <a href="{% change_lang language_code %}">{{ language_name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="footer-copy-info_white">&copy; 2017 Saks Holly Do * CA Transparency in Supply Chains Act</div>
+</footer>

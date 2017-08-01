@@ -1,0 +1,203 @@
+.video-carousel {
+  width: 100%;
+  position: relative;
+  .owl-stage-outer {
+    .owl-stage {
+      display: flex;
+      .slider_video_top {
+        width: 100%;
+        height: 307px;
+        position: relative;
+        background: url("../img/video_page/konstrukcii.png") no-repeat center center;
+        background-size: cover;
+        .slider_video_bottom {
+          p:nth-child(1) {
+            font-size: 14px;
+            color: #fff;
+            font-family: $brand-family-regular;
+            margin: 0;
+          }
+          p:nth-child(2) {
+            font-size: 11px;
+            font-family: $brand-family-regular;
+            color: #fff
+          }
+          span {
+            font-size: 12px;
+            padding: 6px 21px 6px 13px;
+            color: #69247c;
+            cursor: pointer;
+            -webkit-transition: all 0.1s linear 0.1s;
+            -moz-transition: all 0.1s linear 0.1s;
+            -o-transition: all 0.1s linear 0.1s;
+            transition: all 0.1s linear 0.1s;
+            border-radius: 4px;
+            background-color: #fff;
+            &:hover {
+              background-color: #69247c;
+              color: #fff;
+              padding: 6px 21px 6px 4px;
+              font-size: 14px;
+            }
+            svg {
+              width: 18px;
+              height: 15px;
+              margin: 0px -2px -2.7px;
+            }
+
+          }
+          position: absolute;
+          top: 38%;
+          left: 14%;
+        }
+      }
+    }
+  }
+  .owl-nav {
+    .owl-prev {
+      position: absolute;
+      cursor: pointer;
+      bottom: 149px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      justify-content: center;
+      /* text-align: center; */
+      display: flex;
+      align-content: center;
+      background: rgba(255, 255, 255, 0.3);
+      left: 60px;
+      content: '';
+      img {
+        width: 21px;
+      }
+    }
+    .owl-next {
+      position: absolute;
+      cursor: pointer;
+      bottom: 149px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      justify-content: center;
+      /* text-align: center; */
+      display: flex;
+      align-content: center;
+      background: rgba(255, 255, 255, 0.3);
+      right: 60px;
+      content: '';
+      img {
+        width: 21px;
+      }
+    }
+  }
+
+  .owl-dots {
+    width: 100%;
+    @include flex-wrapper(center, center);
+    position: absolute;
+    bottom: 10%;
+
+    .owl-dot {
+      margin: 0 5px;
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        bottom: 4%;
+        background: #FFF;
+        border-radius: 50%;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+      }
+
+      &.active {
+        span {
+          background: #7a1f7f;
+        }
+      }
+    }
+  }
+}
+
+.video_collection_wrapper {
+  display: flex;
+  margin: 39px 30px 63px 30px;
+  justify-content: center;
+  align-self: center;
+  .follow_video_block {
+    width: 171px;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 2px solid #dedede;
+    text-align: center;
+    img {
+      width: 100%;
+      margin: -1px 0px 27px 0px;
+    }
+    p:nth-child(2) {
+      font-size: 12px;
+      color: #898989;
+      margin: 4px 0 3px 0;
+      font-family: $brand-family-bold;
+    }
+    p:nth-child(3) {
+      margin: 6px 0 30px 0;
+      font-size: 12px
+    }
+    span {
+      background-color: #ccd7e3;
+      font-family: $brand-family-bold;
+      padding: 4px 33px 4px 28px;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+
+    }
+  }
+  .wrap_block_video {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .video_block:nth-child(1) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-between;
+      div {
+        margin: 0px 10px 30px 15px;
+        img {
+          width: 173px;
+          border-radius: 7px;
+          height: 97px;
+        }
+
+        p {
+          font-size: 9px;
+          margin: 10px auto -9px 0px;
+          font-family: $brand-family-bold;
+        }
+      }
+    }
+    .video_block:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-between;
+      div {
+        margin: 10px 10px 10px 15px;
+        img {
+          width: 173px;
+          border-radius: 7px;
+          height: 97px;
+        }
+
+        p {
+          font-size: 9px;
+          margin: 10px auto -9px 0px;
+          font-family: $brand-family-bold;
+        }
+      }
+    }
+  }
+}

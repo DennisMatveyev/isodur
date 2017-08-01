@@ -1,0 +1,53 @@
+{% load staticfiles lang_tags i18n %}
+
+<header class="header-wrapper">
+    <div class="header-banner-icon_white_retative animated">
+        <div class="header-social-wrapper">
+            <div class="social-box_header">
+                <div class="social-icons">
+                    <div class="footer-language-wrapper_white">
+                        {% get_available_languages as LANGUAGES %}
+                        {% for language_code, language_name in LANGUAGES %}
+                            <a href="{% change_lang language_code %}">{{ language_name }}</a>
+                        {% endfor %}
+                    </div>
+                    <span class="phone"> <span class="phone-ic"></span> (00 48) 43-823-89-47</span>
+                    <a class="social-ic-common" title="facebook"><img src="{% static 'header/facebook.png' %}"
+                                                                      alt=""></a>
+                    <a class="social-ic-common" title="instagram"><img src="{% static 'header/instagram.png' %}" alt=""></a>
+                    <a class="social-ic-common" title="youtube"><img src="{% static 'header/form.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-context-wrapper">
+            <div class="brand-logo-box">
+                <a href="{% url 'home' %}" class="brand-link">
+                    <span class="brand-icon"></span>
+                </a>
+            </div>
+            <nav class="navigation-wrapper">
+                <div class="nav-house-ic"></div>
+                <ul class="navigation-box">
+                    <li class="navigation-li">
+                        <a class="li-link drop-btn" href="{% url 'company' %}">{% trans 'company' %}</a>
+                    </li>
+                    <li class="navigation-li">
+                        <a class="li-link drop-btn" href="/#products">{% trans 'produits' %}</a>
+                    </li>
+                    <li class="navigation-li">
+                        <a class="li-link drop-btn" href="/#advantages">{% trans 'advantage' %}</a>
+                    </li>
+                    <li class="navigation-li">
+                        <a class="li-link drop-btn" href="/#partners">{% trans 'partner' %}</a>
+                    </li>
+                    <li class="navigation-li">
+                        <a class="li-link drop-btn" href="/#projects">{% trans 'projects' %}</a>
+                    </li>
+                    <li class="navigation-li">
+                        <a class="li-link drop-btn" href="{% url 'contacts' %}">{% trans 'contact us' %}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

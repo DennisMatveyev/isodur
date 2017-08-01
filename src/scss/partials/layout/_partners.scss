@@ -1,0 +1,124 @@
+@import "../constants/variables";
+@import "../constants/mixins";
+
+.partners-wrapper {
+  padding: 25px 0 50px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: center;
+  background: #464a58;
+}
+
+.partners-title-wrapper {
+  flex: 1 0 auto;
+  text-align: center;
+
+  & h4 {
+    font-family: $brand-family-bold;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  & p {
+    font-family: $brand-family-regular;
+    padding: 0 160px;
+    font-size: 12px;
+    color: #94a6b7;
+  }
+}
+
+.partners-slider-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.partners-place-title {
+  flex: 1 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d7d7d7;
+  font-family: $brand-family-bold;
+  font-size: 24px;
+}
+
+.controls-wrapper {
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.slides-wr {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mySlides {
+  display: none;
+  width: 275px;
+  height: 150px;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer
+}
+
+.w3-badge {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  background: #3e8e41;
+}
+
+.partner-carousel {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  .owl-stage-outer {
+    margin: 0 auto;
+    overflow: hidden;
+    .owl-stage {
+      display: flex;
+      .owl-item {
+        img {
+          margin: 20px 35px auto;
+          cursor: all-scroll;
+        }
+      }
+    }
+  }
+  .owl-nav {
+    .owl-prev {
+      position: absolute;
+      cursor: pointer;
+      bottom: 36px;
+      color: red;
+      left: -24px;
+      content: '';
+    }
+    .owl-next {
+      position: absolute;
+      bottom: 36px;
+      cursor: pointer;
+      color: red;
+      content: '';
+      right: -24px;
+    }
+  }
+  img {
+    width: 240px !important;
+  }
+  .partner_nav {
+    width: 20px !important;
+  }
+}

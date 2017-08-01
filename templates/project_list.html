@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load staticfiles i18n %}
+
+{% block content %}
+    <div class="projects-wrapper">
+        <div class="projects-title">
+            <h4>Projet réaliser dans le monde <span>par les blocs de coffrages</span></h4>
+            <p>
+                {% blocktrans %}
+                    ISODUR HOUSE présente sa troisième version du bloc de coffrage isolant, créé pour
+                    fournir un service unique à ceux qui veulent construire en utilisant des systèmes de
+                    construction de qualité supérieure. Qu’il s’agisse de logements ou d’unités industrielles,
+                    d’écoles ou d’hôtels ...
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                    Nous avons les compétences pour conseiller, planifier, approvisionner, construire et
+                    apporter de l’assistance technique au stade de la planification, et pour la fourniture de
+                    matériaux divers et de la main-d’oeuvre spécialisée.
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                    Si la réduction des coûts et l’amélioration de la qualité sont vos objectifs, entrez en
+                    contact avec ISODUR HOUSE. La performance à votre service et à celui de
+                    l’environnement.
+                {% endblocktrans %}
+            </p>
+            <h6>{% trans 'AVEC ISODUR ON PEUT CONSTRUIRE N’IMPORTE QUEL ARCHITECTURE' %}</h6>
+            <ul>
+                <li>{% trans 'APPARTEMENTS' %}</li>
+                <li>{% trans 'VILLAS' %}</li>
+                <li>{% trans 'LOGEMENT SOCIAL' %}</li>
+                <li>{% trans 'CONSTRUCTION INDUSTRIELLE' %}</li>
+                <li>{% trans 'BATIMENT AGRICOLE OU HANGAR' %}</li>
+                <li>{% trans 'HOPITAUX ET ECOLES' %}</li>
+                <li>{% trans 'HOPITAUX ET ECOLES' %}</li>
+                <li>{% trans 'PROJET TOURISTIQUE COMMERCIALE ET MALL' %}</li>
+                <li>{% trans 'LES SOUS-SOL ET PISCINES' %}</li>
+            </ul>
+        </div>
+        <div class="projects-items-wrapper">
+            {% for project in projects %}
+                {% for item in project.projectphoto_set.all %}
+                    <div class="item">
+                    <a href='{{ project.get_absolute_url }}'>
+                        <img src="{{ item.project_photo.url }}" width="100%" height="100%"/><br>
+                    </a>
+                {% endfor %}
+            <div class="insidelay animated fadeIn">
+                <div class="inside_block">
+                    <h3 class="title-project">{{ project.title }}</h3>
+                </div>
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <span id="scrollToTop"><img src="{% static 'arrow_up.svg' %}" alt="arrow_up"></span>
+
+{% endblock content %}

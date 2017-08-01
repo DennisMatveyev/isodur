@@ -1,0 +1,285 @@
+@import "../constants/variables";
+@import "../constants/mixins";
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 15px 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url("../img/advantege/adv_bg.png") no-repeat center center / cover;
+  .modal {
+    overflow-y: hidden !important;
+    .modal-dialog {
+      margin: 17% auto !important;
+    }
+    #wrapper_modal_advantages {
+      border: none;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+      margin: 0 auto;
+      overflow: hidden;
+      width: 80%;
+      padding: 40px 40px 40px 0;
+      font-size: 12px;
+      img.top_position {
+        position: absolute;
+        width: 10px;
+        right: 40px;
+        top: 17px;
+        cursor: pointer;
+      }
+      #advantages_modal {
+        border: none;
+        background-color: transparent;
+        max-height: 340px;
+        margin: 0 auto;
+        width: 100%;
+        overflow-y: scroll !important;
+        padding: 0 35px 0 35px;
+        position: relative;
+        font-size: 14px;
+        font-family: $brand-family-light;
+        p.title_advantage_modal {
+          font-size: 14px;
+          text-align: center;
+          font-family: $brand-family-bold;
+        }
+        p span.bold_text_q {
+          font-weight: bold;
+          font-family: $brand-family-bold;
+        }
+        img {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      ::-webkit-scrollbar {
+        width: 9px;
+        height: 50%;
+        overflow-y: hidden;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #73747a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #a2a3a7;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #aaa;
+      }
+    }
+  }
+}
+
+.advantages-title-wrapper {
+  flex: 1 0 auto;
+  text-align: center;
+  margin: 20px 10px 20px 10px;
+  & h3 {
+    color: #646363;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: $brand-family-bold;
+    font-size: 20px;
+    & span {
+      color: #b1db7f;
+    }
+  }
+  & p {
+    padding: 0 130px;
+    font-size: 13px;
+    color: #a4b3c1;
+    text-align: justify;
+    font-family: $brand-family-light;
+  }
+  & cite {
+    font-family: $brand-family-bold !important;
+  }
+}
+
+.advantages-icons-wrapper {
+  flex: 1 0 auto;
+  width: 1024px;
+  padding: 5px 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & .items {
+    flex: 0 0 auto;
+    width: 20%;
+    margin-bottom: 10px;
+    text-align: center;
+
+    & .adv-img {
+      position: relative;
+      cursor: pointer;
+
+    }
+    p {
+      font-size: 12px;
+      color: #000;
+      font-family: $brand-family-regular;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+  }
+}
+
+.items:nth-child(1) {
+  & .adv-img {
+    margin: 0 auto;
+    width: 112px;
+    height: 73px;
+    background: url("../img/advantege/adv_1.png") no-repeat center left / cover;
+  }
+}
+
+.items:nth-child(2) {
+  & .adv-img {
+    margin: -1px auto;
+    width: 109px;
+    height: 79px;
+    background: url("../img/advantege/adv_2.png") no-repeat -9px center / cover;
+  }
+}
+
+.items:nth-child(3) {
+  & .adv-img {
+    margin: 0 auto;
+    width: 79px;
+    height: 79px;
+    background: url("../img/advantege/adv_3.png") no-repeat center right / cover;
+  }
+}
+
+.items:nth-child(4) {
+  & .adv-img {
+    margin: -15px auto 6px auto;
+    width: 69px;
+    height: 77px;
+    background: url("../img/advantege/adv_4.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(5) {
+  & .adv-img {
+    margin: 5px auto;
+    width: 73px;
+    height: 77px;
+    background: url("../img/advantege/adv_5.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(6) {
+  & .adv-img {
+    margin: 0 auto;
+    width: 108px;
+    height: 103px;
+    background: url("../img/advantege/adv_6.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(7) {
+  & .adv-img {
+    margin: 14px auto;
+    width: 74px;
+    height: 74px;
+    background: url("../img/advantege/adv_7.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(8) {
+  & .adv-img {
+    margin: 26px auto;
+    width: 151px;
+    height: 35px;
+    background: url("../img/advantege/adv_8.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(9) {
+  & .adv-img {
+    margin: 16px auto;
+    width: 70px;
+    height: 70px;
+    background: url("../img/advantege/adv_9.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(10) {
+  & .adv-img {
+    margin: 12px auto;
+    width: 82px;
+    height: 66px;
+    background: url("../img/advantege/adv_10.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(11) {
+  & .adv-img {
+    margin: 8px auto;
+    width: 79px;
+    height: 74px;
+    background: url("../img/advantege/adv_11.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(12) {
+  & .adv-img {
+    margin: 8px auto;
+    width: 133px;
+    height: 78px;
+    background: url("../img/advantege/adv_12.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(13) {
+  & .adv-img {
+    margin: 8px auto;
+    width: 79px;
+    height: 74px;
+    background: url("../img/advantege/adv_13.png") no-repeat center center / cover;
+  }
+}
+
+.items:nth-child(14) {
+  margin: 0 5px 0 -25px;
+  width: 15%;
+  & .adv-img {
+    margin: -9px 0px 6px 35px;
+    width: 60px;
+    height: 70px;
+    background: url("../img/advantege/adv_14.png") no-repeat center center / cover;
+  }
+}
+
+// Modal styles
+.modal-wrapper {
+  display: none;
+  width: 75%;
+  height: 375px;
+  z-index: 1;
+  overflow-y: scroll;
+  color: #373737;
+  background: rgba(240, 240, 241, 0.8);
+  padding: 25px 50px;
+  position: absolute;
+}
+
+.close-btn {
+  position: fixed;
+  float: right;
+  margin-right: -25px;
+  margin-top: -10px;
+  background: red;
+  padding: 5px 10px;
+  cursor: pointer;
+}

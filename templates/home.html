@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+    {% include 'main/slider.html' %}
+    {% include 'main/our-product.html' %}
+    {% include 'main/testimonials.html' %}
+    {% include 'main/advantages.html' %}
+    {% include 'main/partners.html' %}
+    {% include 'main/map_main.html' %}
+    <span id="top_main"><img src="{% static 'arrow_up.svg' %}" alt="arrow_up"></span>
+
+
+{% endblock content %}
+
+
+

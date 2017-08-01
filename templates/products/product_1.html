@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load staticfiles i18n %}
+
+{% block content %}
+
+    <div class="product-wrapper">
+        <div class="wrraper_top_block">
+            <div class="product-description">
+                <h3 class="prod-title">{% trans 'des blocs' %} <span>{% trans 'de coffrages' %}</span></h3>
+                <div class="small-text-description">
+                    <img class="construction" src="{% static 'products/construct.jpg' %}" alt="construct">
+                    <p>
+                        {% blocktrans %}
+                            Nos coffrages isolants ISODUR HOUSE procurent aux architectes, dessinateurs,
+                            propriétaires et contracteurs la liberté et la flexibilité de concevoir et construire
+                            tel qu'ils le veulent. ISODUR propose une gamme complète des blocs de
+                            coffrages et divers accessoires différents pour couvrir tous vos besoins en
+                            matière de construction.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Les blocs ISODUR vous offrons la réponse pour bénéficier d’une maison passive
+                            ou d’une maison à énergie positive est HQE.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Les matériaux ISODUR répondent d’ailleurs totalement aux nouvelles
+                            contraintes des réglementations thermiques au Maroc
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product-slider">
+            <h4>{% trans 'Blocks of' %}
+                <span>
+                {% trans 'ISODUR SYSTEM ' %}</span></h4>
+            <div class="product-carousel">
+                {% for product in products %}
+                    <div data-toggle="modal" data-target="#{{ product.slug }}" class="slide-img">
+                        <img src="/media/{{ product.products_photo }}" alt="{{ product.title }}"/>
+                    </div>
+                {% endfor %}
+            </div>
+            {% for product in products %}
+                <!--Modal image element-->
+                <div id="{{ product.slug }}" class="modal fade bd-example-modal-lg animated fadeIn" tabindex="-1"
+                     role="dialog"
+                     aria-labelledby="myLargeModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div id="product-modal-element" class="modal-content">
+                            <img class="close top_position" data-dismiss="modal" aria-label="Close"
+                                 src="{% static 'close.svg' %}"
+                                 alt="close">
+                            <img class="element-image" src="/media/{{ product.products_photo }}"
+                                 alt="{{ product.slug }}"/>
+                            <p>{{ product.title }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            <!--Modal image element End -->
+            <div class="wrapper-feedback_block">
+                <div class="feedback_text_block">
+                    <h4>{% trans 'LA DALLE COFFRANTE ISOLANTE ISODUR. La Dalle béton la plus résistante du marché' %}</h4>
+                    <div class="i_constructor_container">
+                        <img src="{% static 'products/slide-3/product-2-7.png' %}" alt="in">
+                        <img src="{% static 'products/slide-4/product-3-2.png' %}" alt="out">
+                    </div>
+                    <p class="title_product_element">POURQUOI CHOISIR LES HOURDIS ISODUR ?</p>
+                    <p class="title-product-element-description">{% trans 'ISOLATION ET ETANCHEITE TOITURE TERRASSE' %}</p>
+                    <ul class="list_element">
+                        <li>
+                            {% trans 'Absence de ponts thermiques' %}
+                        </li>
+                        <li>
+                            {% trans 'Solution d’étanchéité parfaite' %}
+                        </li>
+                        <li>
+                            {% trans 'Surcharge jusqu’à 1 000 kg / m²' %}
+                        </li>
+                        <li>
+                            {% trans 'Isolation des murs et acrotères en continu' %}
+                        </li>
+                    </ul>
+                    <p class="title-product-element-description">{% trans 'PLANCHER HOURDIS ETAGE' %}</p>
+                    <ul class="list_element">
+                        <li>
+                            {% trans 'Gestion des températures par niveau et par pièce, dissociation des parties jour et nuit de la maison' %}
+                        </li>
+                        <li>
+                            {% trans 'Facilite la pose de faux-plafonds, de gaines et de l’éclairage' %}
+                        </li>
+                        <li>
+                            {% trans 'Permet tous types de finition (frises, enduit projeté et BA13)' %}
+                        </li>
+                        <li>
+                            {% trans 'Facilite la création de réservations' %}
+                        </li>
+                    </ul>
+                    <p class="title-product-element-description">{% trans 'ISOLATION VIDE SANITAIRE' %}</p>
+                    <ul class="list_element">
+                        <li>
+                            {% trans 'Une véritable barrière thermique pour un confort inégalé' %}
+                        </li>
+                        <li>
+                            {% trans 'Pose sur radier ou sur fouilles en rigoles, réduction des délais, pas d’outillage spécifique, économies de matériaux' %}
+                        </li>
+                        <li>
+                            {% trans 'Adaptée aux zones sismiques, inondables, terrains argileux, dégâts miniers, …' %}
+                        </li>
+                    </ul>
+                    <ul class="list_element">
+                        <li>
+                            {% trans '- Légèreté du PSE.' %}
+                        </li>
+                        <li>
+                            {% trans '- Réduction du poids mort du plancher et donc augmentation de la portée des poutrelles.' %}
+                        </li>
+                        <li>
+                            {% trans '- Souplesse de la conception.' %}
+                        </li>
+                        <li>
+                            {% trans '- Performance thermique élevée.' %}
+                        </li>
+                        <li>
+                            {% trans '- Un des meilleurs rapports qualité thermique/prix.' %}
+                        </li>
+                        <li>
+                            {% trans '- Une di munition notable de la consommation dénergie.' %}
+                        </li>
+                    </ul>
+                    <p class="title_product_element"> {% trans 'LE 4 EN 1' %}</p>
+                    <p class="title-product-element-description">
+                        {% blocktrans %}
+                            Avec les hourdis ISODUR en Polystyrène EPS, en une intervention simple, vous réalisez 4
+                            opérations complexes pour réaliser votre dalle béton !
+                        {% endblocktrans %}
+                    </p>
+                    <ol class="list_element">
+                        <li>{% trans 'Pose du coffrage' %}</li>
+                        <li>{% trans 'Pose de l’isolation' %}</li>
+                        <li>{% trans 'Etanchéité à l’air' %}</li>
+                        <li>{% trans 'Suppression des ponts thermiques' %}</li>
+                    </ol>
+                    <p class="four-in-one_text">{% trans 'Simplifiez-vous la vie faites des économies' %}</p>
+                    <p class="four-in-one_text" style="margin-bottom: 10px">{% trans 'Simplement génial' %}</p>
+                    <p class="four-in-one_text">{% trans 'Dalle ISODUR sur mesure :' %}</p>
+                    <p class="four-in-one_text_bottom">
+                        {% blocktrans %}
+                            Fabrication des hourdis sur mesure coupés a la longueur
+                            Les portées pouvant aller jusqu'à 8 mètre et plus.
+                        {% endblocktrans %}
+                    </p>
+                    <p class="four-in-one_text">{% trans 'La réduction de main d’œuvre est prioritaire sur un chantier :' %}</p>
+                    <p class="four-in-one_text_bottom">
+                        {% blocktrans %}
+                            Le temps de mise en œuvre est d’une rapidité inégalée.
+                            Hourdis + armatures métalliques 100 m2 posé en 1 heure
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

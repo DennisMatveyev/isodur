@@ -1,0 +1,97 @@
+@import "../constants/variables";
+@import "../constants/mixins";
+
+.our-product-wrapper {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-our-title {
+  @include flex-inside(1, 0, auto);
+  font-family: $brand-family-bold;
+  color: #b2d46d;
+  font-size: 23px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.product-leavs {
+  display: inline-block;
+  width: 12px;
+  height: 20px;
+  background: url("../img/ourProduct/ht-leaf.png") no-repeat center center / cover;
+}
+
+.product-description_ {
+  @include flex-inside(1, 0, auto);
+  margin-bottom: 60px;
+  text-align: center;
+
+  & h4 {
+    font-family: $brand-family-bold;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  & span {
+    color: #878787;
+  }
+  & p {
+    padding: 30px 50px 0 50px;
+    color: #878787;
+    font-size: 10px;
+
+  }
+}
+
+.product-section-wrapper {
+  @include flex-inside(1, 0, auto);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 92px;
+}
+
+a.item-products {
+  @include flex-inside(1, 0, auto);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  align-content: center;
+  align-self: center;
+  cursor: pointer;
+  width: 25%;
+  &:hover img.product-ic{
+    transform: scale(1.1, 1.1);
+  }
+  & img.product-ic{
+    width: 107px;
+    height: 107px;
+    @include transition(all 0.5s ease 0s);
+    margin-bottom: 20px;
+  }
+
+  & h4 {
+    text-align: center;
+    font-family: $brand-family-bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  & p {
+    text-align: center;
+    font-size: 10px;
+    font-family: $brand-family-regular;
+    color: #878787;
+  }
+}

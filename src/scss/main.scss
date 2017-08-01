@@ -1,0 +1,69 @@
+/** ===============================================================
+*               IMPORT ALL NEEDED PART FOR APPLICATION           */
+// header styles
+@import "partials/layout/header";
+@import "partials/layout/white_header";
+// slider styles
+@import "partials/layout/slider";
+// our product styles
+@import "partials/layout/our-product";
+// our testimonials styles
+@import "partials/layout/testimonials";
+// our testimonials styles
+@import "partials/layout/advantages";
+// our partners styles
+@import "partials/layout/partners";
+// our map styles
+@import "partials/layout/map";
+// video page style
+@import "partials/layout/video_page";
+// footer
+@import "partials/layout/footer";
+// our company styles
+@import "partials/layout/company";
+// our product detail styles
+@import "partials/layout/product-detail";
+// our contacts styles
+@import "partials/layout/contacts";
+// our projects styles
+@import "partials/layout/projects";
+// ================================================================
+
+// clear default browsers settings
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// Sticky footer
+.body-wrapper {
+  justify-content: space-between;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+}
+
+#top_main {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(108, 110, 116, 0.25);
+  font-weight: bold;
+  text-decoration: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  display: none;
+  & img {
+    width: 49%;
+    margin: 14px;
+    cursor: pointer;
+  }
+}
+
+.main-wrapper {
+  flex: 1 0 auto;
+}
+

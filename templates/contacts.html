@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load staticfiles i18n %}
+
+{% block content %}
+
+    <div id="top_contact" class="contacts-wrapper">
+        <div class="contacts-title">
+            <img class="image-contact" src="{% static 'contact/top_image.png' %}" alt="contact">
+            <p class="first-block_text">
+                {% blocktrans %}
+                    <span>ISODUR HOUSE</span> et t’une industrie locale de matériaux de construction
+                    innovants valorisant pleinement les compétences nationales capable
+                    d’accompagner et de soutenir les projets nationaux pour le développement de
+                    l’habitat écologique et moderne en positionnant le Maroc en tant que
+                    fournisseur majeur de matériaux de construction aussi bien au niveau national
+                    qu’international, y compris les pays du continent africains.
+                {% endblocktrans %}
+            </p>
+            <h1>{% trans 'NOTRE SERVICE ASSISTANCE ISODUR HOUSE' %}</h1>
+            <p class="title_top_text"><span>{% trans 'Réussir son gros œuvre en toute sérénité :' %}</span></p>
+            <p>
+                {% blocktrans %}
+                    La société ISODUR HOUSE, offre à l’ensemble de ses clients une
+                    Formation à l’utilisation des blocs coffrant.
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                    Cette formation initiale est dispensée au siège ISODUR HOUSE à La zone
+                    industrielle Ain Atiq région de Rabat, sur demande comme elle peut se faire
+                    directement sur votre chantier selon conditions.
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                    Nous invitons les entrepreneurs, architectes, ingénieurs et professionnels de la
+                    conception à participer pour en apprendre davantage sur les avantages de la
+                    construction avec ISODUR HOUSE.
+                {% endblocktrans %}
+            </p>
+            <div class="block_list">
+                <div>
+                    <p class="list-title">{% trans 'FORMATION À L’USINE ISODUR HOUSE' %}</p>
+                    <ul>
+                        <li>{% trans 'Gestion d’un projet de construction' %}</li>
+                        <li>{% trans 'Règles et accessoires indispensables' %}</li>
+                        <li>{% trans 'Méthodologie de montage' %}</li>
+                        <li>{% trans 'Mise en place des étais' %}</li>
+                        <li>{% trans 'Conseils pour le coulage du béton' %}</li>
+                        <li>{% trans 'Préconisations des méthodes de revêtements' %}</li>
+                        <li>{% trans 'Conseils sur les produits compatibles HQE, BBC et passifs' %}</li>
+                        <li>{% trans 'Certification ISODUR HOUSE' %}</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="list-title">{% trans 'AVANTAGES DE LA FORMATION' %}</p>
+                    <ul>
+                        <li>{% trans 'Une formation et une assistance dédiées' %}</li>
+                        <li>{% trans 'Un démarrage de chantier en toute confiance' %}</li>
+                        <li>{% trans 'Un gain en temps et en efficacité considérable' %}</li>
+                        <li>{% trans 'Un montage rapide' %}</li>
+                        <li>{% trans 'Un temps libre préservé pour le second œuvre' %}</li>
+                        <li>{% trans 'Un délai de réalisation réduit' %}</li>
+                        <li>{% trans 'Un budget épargné' %}</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-bottom: 50px;">
+                {% blocktrans %}
+                    'Vous voulez vous inscrire à la formation ? Merci de remplir ce
+                    formulaire, nous prendrons contact avec vous le plus rapidement
+                    possible.'
+                {% endblocktrans %}
+            </p>
+        </div>
+        <form class="form-wrapper" id="i_form" method="post">{% csrf_token %}
+            <div class="sec_1">
+                <input id="id_name" maxlength="20" name="name" type="text" placeholder="first and last name"
+                       autofocus>
+                <input id="id_email" name="email" maxlength="50" placeholder="Email Address" type="email">
+                <input id="id_marketing" maxlength="50" name="marketing" placeholder="Marketing" type="text">
+                <div class="box-captcha">
+                    {{ form.captcha }}
+                    {{ form.errors.captcha }}
+                </div>
+            </div>
+            <div class="sec_2">
+                <textarea cols="40" id="id_message" name="message" placeholder="Message" maxlength="500" rows="10"
+                          type="text"></textarea>
+                <input class="submit-btn" type="submit" value="{% trans 'Send Message' %}"/>
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}

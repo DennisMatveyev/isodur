@@ -1,0 +1,76 @@
+@import "../constants/variables";
+@import "../constants/mixins";
+
+.testimonials-wrapper {
+  padding: 30px 0 40px;
+  background: #c9d8e4;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+}
+
+.testimonials-description {
+  text-align: center;
+  margin-bottom: 30px;
+
+  & h2 {
+    font-family: $brand-family-bold;
+    text-transform: uppercase;
+    color: #797c86;
+    font-size: 20px;
+    & span {
+      color: #fff;
+    }
+  }
+  & p {
+    padding: 20px 180px 0 ;
+    font-size: 12px;
+    color: #9cadbd;
+  }
+}
+
+.testimonials-img-wrapper {
+  @include flex-wrapper(center, center);
+  margin: 0 auto;
+
+  //width: 60%;
+
+  & .item {
+    font-family: $brand-family-bold;
+    margin: 0px 30px 0px 5px;
+
+    & .img-ic {
+      margin: 0 auto 15px auto;
+      height: 155px;
+    }
+    & p {
+      color: #fff;
+      margin-bottom: 27px;
+      font-size: 12px;
+      width: 85%;
+      font-family: $brand-family-bold;
+    }
+  }
+}
+.image_block_outside{
+  position: relative;
+  overflow: hidden;
+  width: 232px;
+  height: 152px;
+  img{
+    position: absolute;
+  }
+}
+.item:nth-child(1){
+  .position_img{
+    bottom: -8px;
+  }
+}
+.item:nth-child(2){
+  .position_img{
+  }
+}
+.item:nth-child(3){
+  .position_img{
+  }
+}

@@ -1,0 +1,276 @@
+/* ========= Connect dependencies ========= */
+@import "../constants/variables";
+@import "../constants/mixins";
+/* ========= End of Imports ========= */
+
+.header-wrapper {
+  position: relative;
+}
+
+.header-banner-icon_white {
+  display: block;
+  z-index: 99999;
+  animation-name: fadeIn;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fdffff;
+}
+.header-banner-icon {
+  display: block;
+  z-index: 99999;
+  animation-name: fadeInDown;
+  width: 100%;
+  top: 0;
+  height: 247px;
+  position: fixed;
+  background: url("../img/header/head_banner_ic.png") no-repeat center bottom / cover;
+}
+
+// ========= First level for social at the header =========
+.header-social-wrapper {
+  @include flex-wrapper(flex-end, center);
+}
+
+.social-box {
+  margin-right: 48px;
+  @include flex-inside(1, 0, auto);
+  @include flex-wrapper(flex-start, center);
+}
+
+.social-box_header {
+  margin: 7px 56px 0 0;
+  @include flex-inside(1, 0, auto);
+  @include flex-wrapper(flex-start, center);
+}
+
+.phone {
+  @include flex-wrapper(flex-start, center);
+  margin: 0 22px 0 26px;
+  font-family: $brand-family-light;
+  font-size: $nav-font-size;
+  color: $brand-font-color-secondary;
+  font-weight: bold;
+}
+
+.phone-ic {
+  @include flex-inside(1, 0, auto);
+  margin-right: 5px;
+  width: 12px;
+  height: 17px;
+  background: url("../img/header/phone_ic.png") no-repeat center center / cover;
+}
+
+.social-icons {
+  @include flex-wrapper(flex-start, center);
+}
+
+.social-ic-common {
+  display: block;
+  cursor: pointer;
+  margin: 0 5px 2px 5px;
+  @include transition(all 0.1s linear 0.1s);
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+// ========= Second section for brand icon and navigation =========
+// brand icon
+.header-context-wrapper {
+  @include flex-wrapper(space-between, center);
+}
+
+.brand-logo-box {
+  @include flex-inside(1, 0, auto);
+}
+
+
+.brand-icon {
+  display: block;
+  width: 197px;
+  height: 180px;
+  margin: -48px 0 -22px 49px;
+  background: url("../img/header/logo-1.png") no-repeat center center / contain;
+}
+
+// nav
+.navigation-wrapper {
+  margin-top: 30px;
+  @include flex-inside(1, 0, auto);
+  @include flex-wrapper(space-between, center)
+}
+
+.nav-house-ic {
+  @include flex-inside(0, 0, auto);
+  width: 13px;
+  height: 13px;
+  margin-right: 2px;
+  background: url("../img/header/iso_hom_ic.png") no-repeat center center / cover;
+}
+
+.navigation-box {
+  @include flex-inside(1, 0, auto);
+  margin: 0 32px 0 2px;
+  @include flex-wrapper(space-between, center);
+}
+
+.navigation-li {
+  list-style: none;
+  -webkit-transition: all 0.3s linear 0.1s;
+  -moz-transition: all 0.3s linear 0.1s;
+  -o-transition: all 0.3s linear 0.1s;
+  transition: all 0.3s linear 0.1s;
+  margin-right: 25px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  a {
+    -webkit-transition: all 0.3s linear 0.1s;
+    -moz-transition: all 0.3s linear 0.1s;
+    -o-transition: all 0.3s linear 0.1s;
+    transition: all 0.3s linear 0.1s;
+    text-decoration: none;
+    letter-spacing: 1.4px;
+    &:hover {
+      color: rgba(122, 31, 127, 0.6);;
+    }
+  }
+}
+
+.navigation-li:last-child {
+  margin-right: 0;
+}
+
+.li-link {
+  @include flex-wrapper(flex-start, center);
+  font-family: $brand-family-bold;
+  font-size: $nav-font-size;
+  color: $brand-font-color-secondary;
+  text-transform: $nav-font-transform;
+  text-decoration: none;
+  padding: 5px 0;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  cursor: pointer;
+}
+
+/*
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.4) inset;
+ */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  -webkit-transition: all 1s ease-out 0.5s;
+  -moz-transition: all 1s ease-out 0.5s;
+  -o-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+  background-color: #78809c;
+  width: auto;
+  box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.4) inset;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  font-size: 11px;
+  line-height: 13px;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: all 0.1s linear 0.1s;
+  -moz-transition: all 0.1s linear 0.1s;
+  -o-transition: all 0.1s linear 0.1s;
+  transition: all 0.1s linear 0.1s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #474747;
+  text-decoration: none;
+}
+
+.navigation-li:hover {
+  border-top: 3px solid rgba(122, 31, 127, 0.6);
+  border-bottom: 3px solid rgba(122, 31, 127, 0.4);
+  color: rgba(122, 31, 127, 0.6);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-content {
+  -webkit-transition: all 1s ease-out 0.5s;
+  -moz-transition: all 1s ease-out 0.5s;
+  -o-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
+
+.navigation-li:hover .dropdown-content {
+  display: block;
+  border-top: 3px solid rgba(122, 31, 127, 0.6);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.navigation-box:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.arr_icon {
+  @include flex-inside(1, 0, auto);
+  width: 7px;
+  height: 5px;
+  margin: 0 0 0 5px;
+  background: url("../img/header/arr_down.png") no-repeat center center / cover;
+}
+
+// ========= Third part text center =========
+.header-motivation-txt {
+  font-family: $brand-family-light;
+  color: $brand-font-color-primary;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+@media (max-width: 1040px) {
+  .brand-icon {
+    display: block;
+    width: 167px;
+    height: 160px;
+    margin: -38px 0 -10px 29px;
+    background: url("../img/header/logo-1.png") no-repeat center center / contain;
+  }
+  .navigation-li {
+    list-style: none;
+    margin-right: 20px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    position: relative;
+
+    a {
+      text-decoration: none;
+      font-size: 13px;
+      &:hover {
+        color: rgba(122, 31, 127, 0.6);;
+      }
+    }
+  }
+  .header-motivation-txt {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header-banner-icon {
+  height: 347px;
+}
+  .brand-icon {
+  width: 235px;
+  height: 247px;
+}
+}

@@ -1,0 +1,16 @@
+{% load staticfiles %}
+
+<section id="partners" class="partners-wrapper">
+    <div class="partners-title-wrapper">
+        <h4>Partnerships</h4>
+    </div>
+    <div class="partners-slider-wrapper">
+        <div class="partner-carousel">
+            {% for partner in partners %}
+                <img src="/media/{{ partner.partner_image }}" alt="{{ partner.title }}"/>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="partners-place-title">UNITED KINGDOM</div>
+</section>
+

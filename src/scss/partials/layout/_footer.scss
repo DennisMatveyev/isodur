@@ -1,0 +1,60 @@
+/* ========= Connect dependencies ========= */
+@import "../constants/variables";
+@import "../constants/mixins";
+/* ========= End of Imports ========= */
+
+.footer-decoration_white {
+  margin: 2px 0 0 0;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2);
+  font-family: $brand-family-light !important;
+}
+
+.footer-actions-wrapper_white {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 38px 10px 10px 10px;
+
+}
+
+.footer-contact-wrapper_white {
+  flex: 0 1 auto;
+  & .footer-soc-box {
+    margin-right: 95px;
+  }
+  & .social-box {
+    & .footer-cl_white {
+      font-size: 12px;
+    }
+  }
+}
+
+.footer-language-wrapper_white {
+  flex: 0 1 auto;
+  font-size: 14px;
+  & a {
+    text-decoration: none;
+    color: #474747;
+  }
+  & a:hover {
+    color: #7a1f7f;
+  }
+  & a:first-child:after {
+    content: " | ";
+  }
+  & .change-country {
+    display: block;
+    color: #474747;
+    cursor: default;
+  }
+}
+
+.footer-copy-info_white {
+  flex: 0 1 auto;
+  text-align: center;
+  font-size: 9px;
+  margin: 0 0 16px 0;
+  color: #474747;
+}

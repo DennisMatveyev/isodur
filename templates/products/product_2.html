@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load staticfiles i18n %}
+
+{% block content %}
+
+    <div class="product-wrapper_2prod">
+        <div class="wrraper_top_block">
+            <div class="product-description">
+                <h3 class="prod-title">{% trans 'Plaque de' %} <span>{% trans 'polystyrene' %}</span></h3>
+                <div class="small-text-description_2prod">
+                    <cite>« Le polystyrène est un isolant thermique et acoustique performant »</cite>
+                    <p>
+                        {% blocktrans %}
+                            Quelles que soient leur dimension ou leur épaisseur, les panneaux de
+                            polystyrène expansé peuvent servir à l’isolation des murs, des toitures, des
+                            fondations et des bâtiments lourds, peu importe la structure ou le fini
+                            extérieur.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            C’est un matériau rigide et léger, facile à manipuler. Il offre une efficacité
+                            énergétique de longue durée de vie qui ne s’altère pas avec le temps, une
+                            valeur isolante permanente.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            De tous les types d’isolants rigides offerts sur le marché, le polystyrène
+                            expansé se démarque par son excellent rapport valeur R/Prix.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Parfaits pour des applications résidentielles, commerciales et d’entreposage à
+                            froid, les panneaux de polystyrène expansé ISODUR offerts une gamme
+                            d’épaisseurs et de densités des plus variées.
+                        {% endblocktrans %}
+                    </p>
+                    <ul>
+                        <li>{% trans 'Abondant sur le marché' %}</li>
+                        <li>{% trans 'Bonnes performances thermiques' %}</li>
+                        <li>{% trans 'Léger et facile à travailler' %}</li>
+                        <li>{% trans 'Insensible à l’humidité' %}</li>
+                        <li>{% trans 'Perméable à la vapeur d’eau' %}</li>
+                        <li>{% trans 'Prix abordable' %}</li>
+                        <li>{% trans 'Conductivité thermique' %}</li>
+                        <li>{% trans 'Comportement à l’eau' %}</li>
+                        <li>{% trans 'Résistance mécanique' %}</li>
+                        <li>{% trans 'Réaction au feu' %}</li>
+                        <li>{% trans 'Stabilité dimensionnelle' %}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="product-slider">
+            <h4>{% trans 'Blocks of' %}
+                <span>
+                {% trans 'ISODUR SYSTEM ' %}</span></h4>
+            <div class="product-carousel">
+                <div class="slide-img">
+                    <img data-dot="<span></span>" src="{% static 'products/1.png' %}"/>
+                </div>
+                <div class="slide-img">
+                    <img data-dot="<span></span>" src="{% static 'products/2.png' %}"/>
+                </div>
+                <div class="slide-img">
+                    <img data-dot="<span></span>" src="{% static 'products/3.png' %}"/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

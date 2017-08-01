@@ -1,0 +1,742 @@
+{% load staticfiles i18n %}
+
+<section id="advantages" class="advantages-wrapper">
+    <div class="advantages-title-wrapper">
+        <h3>
+            {% blocktrans %}
+                ISODUR HOUSE LE FUTURE EN<span> CONSTRUCTION</span>
+            {% endblocktrans %}
+        </h3>
+        <p>
+            {% blocktrans %}
+                Vous-voulez construire aujourd’hui une maison de de- main et investir à
+                long terme pour soi et les générations futures, une maison où il fait bon à
+                vivre avec un environnement sain, sécuritaire et confortable.
+                Aujourd’hui il faut penser différemment, les dernières années ont changé
+                notre façon de construire et nos préoccupations ont évolué.
+            {% endblocktrans %}
+        </p>
+        <p>
+            {% blocktrans %}
+                La construction <cite> « ENERGETIQUE ANTISISMIQUE ET
+                L’ISOLATION »</cite> sont au cœur de ces préoccupations devenues
+                essentielles aujourd’hui et encore plus demain.
+            {% endblocktrans %}
+        </p>
+        <p>
+            {% blocktrans %}
+                Le mode de construction des gros œuvres de votre maison constitue la
+                première décision d’une grande importance dans les choix de réalisation
+                de votre projet. Cette décision passe par l’adoption d’un système de
+                construction compétitif avec des matériaux ayant fait leurs preuves à
+                l’échelle internationale et ayant toutes les normes et garanties pour leur
+                application au Maroc
+            {% endblocktrans %}
+        </p>
+        <cite>
+            {% blocktrans %}
+                « Avec ISODUR HOUSE, vous économiserez
+                temps et argent en construisant des maisons
+                plus solides, plus durables et surtout plus
+                énergétiques »
+            {% endblocktrans %}
+        </cite>
+    </div>
+
+    <div class="advantages-icons-wrapper">
+
+        <div class="items">
+            <div data-toggle="modal" data-target="#excellente" class="adv-img"></div>
+            <p>
+                {% trans 'EXCELLENTE PERFORMANCE' %}<br>{% trans 'THERMIQUE' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#double" class="adv-img"></div>
+            <p>
+                {% trans 'DOUBLE ISOLATION' %}<br>{% trans 'PHONIQUE' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#securite" class="adv-img"></div>
+            <p>
+                {% trans 'SÉCURITÉ ET DURABILITÉ' %}<br>{% trans 'SUPÉRIEUR' %}
+            </p>
+        </div>
+
+        <div class="items">
+            <div data-toggle="modal" data-target="#rapidite" class="adv-img"></div>
+            <p>
+                {% trans 'RAPIDITE' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#respire" class="adv-img"></div>
+            <p>
+                {% trans 'ISODUR UN MUR QUI' %}<br>{% trans 'RESPIRE' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#diminution" class="adv-img"></div>
+            <p>
+                {% trans 'DIMINUTION DU RISQUE' %}<br>{% trans 'DE FISSURES' %}
+            </p>
+        </div>
+
+        <div class="items">
+            <div data-toggle="modal" data-target="#resistage" class="adv-img"></div>
+            <p>
+                {% trans 'RESISTANCE AU FEU' %}<br>{% trans 'CLASSE M1' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#gain" class="adv-img"></div>
+            <p>
+                {% trans 'GAIN DE SURFACE HABITABLE' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#les" class="adv-img"></div>
+            <p>
+                {% trans 'A L’ÉPREUVE SUR LES' %}<br>{% trans 'RONGEURS' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#la_sante" class="adv-img"></div>
+            <p>{% trans 'ISODUR ET LA SANTE' %}</p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#ecologie" class="adv-img"></div>
+            <p>
+                {% trans 'ECOLOGIE ET ECONOMIES' %}<br>{% trans 'D’ENERGIE' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#La" class="adv-img"></div>
+            <p>
+                {% trans 'LA FINITION SUR LES MURS' %}<br>
+                {% trans 'ISODUR N’A DE LIMITE QUE DANS' %}<br>
+                {% trans 'VOTRE IMAGINATION' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#les_econimie" class="adv-img"></div>
+            <p>
+                {% trans 'LES ECONOMIE avec' %}<br>{% trans 'ISODUR HOUSE' %}
+            </p>
+        </div>
+        <div class="items">
+            <div data-toggle="modal" data-target="#qr" class="adv-img"></div>
+            <p>
+                {% trans 'Q & R' %}
+            </p>
+        </div>
+    </div>
+    <!--Modal Window EXCELLENTE PERFORMANCE THERMIQUE -->
+    <div id="excellente" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p class="title_advantage_modal">
+                        {% trans "DOUBLE ISOLATION RENFORCÉE U0,29 À U0,11" %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            L’objectif principal de l’emploi du système ISODUR, c’est de permettre
+                            à toute construction neuve d’être très bien isolée. Pour cela il a fallu
+                            supprimer tous les ponts thermiques, cause principale des déperditions
+                            énergétiques. La combinaison de l’isolant en polystyrène et le béton
+                            produit facilement des murs, de l’empattement jusqu’au toit, solides et
+                            isolants de l’extérieur et de l’intérieur, sans espace d’air et permet la
+                            totale rupture des ponts thermiques.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Un mur ISODUR permet de stocker l’énergie, en absorbant la
+                            chaleur ainsi que le froid, il permet de réaliser des bâtiments à très
+                            faible consommation énergétique et des économies jusqu’à 90 % Et
+                            plus en cout d’énergie sur le chauffage et la climatisation, et ce grâce
+                            a sa performance et ses hautes capacités d’isolation qui permettent
+                            une faible déperdition thermique en hiver et offrent en été une
+                            protection contre la chaleur, bénéficiant ainsi d’une ambiance
+                            agréable toute l’année et procurant un cadre de vie beaucoup plus
+                            confortable et une économie à vie très remarquable sur votre facture
+                            d’électricité .
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            L’étude a été réalisée pour une épaisseur de mur de 25 cm, dont 15 cm
+                            de béton, 5cm d’isolation intérieure, 5cm d’isolation extérieure, réalisée
+                            à partir d’une température extérieure de -15°C/- 10° C et d’une
+                            température intérieure de +19°C/20°C en hiver et avec une température
+                            extérieure de +55°C /45°C en été et d’une température intérieure de
+                            +20°C /21°C.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            « Le système ISODUR permettent une faible
+                            déperdition thermique en hiver et offrent en été une
+                            protection contre la chaleur »
+                        {% endblocktrans %}
+                    </p>
+                    <img src="{% static 'advantege/modal/photo.png' %}" alt="photo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window EXCELLENTE PERFORMANCE THERMIQUE End -->
+    <!--Modal Window DOUBLE ISOLATION PHONIQUE -->
+    <div id="double" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p class="title_advantage_modal">{% trans 'EXCELLENTE RÉSISTANCE AU BRUIT' %}</p>
+                    <p>
+                        {% blocktrans %}
+                            Les Blocs de coffrage isolé ISODUR avec son noyau de béton entouré
+                            de chaque côté d’un polystyrène expansé, constitué une barrière efficace
+                            qui freine toute vibration de son venant de l’extérieur, et non seulement
+                            assure une ambiance sereine et confortable à l’intérieur de la maison,
+                            mais aussi de chaque chambre individuellement. Ce qui constitue un
+                            système de construction idéal pour les bâtiments à plusieurs logements
+                            collectifs, hôpitaux, bâtiments d’enseignement, hôtel, plateaux bureaux,
+                            discothèques, Pubs et restaurants.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            « Construire avec ISODUR HOUSE c’est
+                            l’assurance d’un grand confort acoustique »
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% trans 'Valeurs :' %}<br>
+                        {% blocktrans %}
+                            Rw =52,3 dB pour les murs de séparation intérieure
+                            Valeurs : Rw = 45,1 dB pour les murs d’extérieurs
+                        {% endblocktrans %}
+                    </p>
+                    <img src="{% static 'advantege/modal/tempetature.png' %}" alt="chart">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window DOUBLE ISOLATION PHONIQUE End -->
+    <!--Modal Window SÉCURITÉ ET DURABILITÉ SUPÉRIEUR  -->
+    <div id="securite" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p class="title_advantage_modal">{% trans 'ANTI-SISMIQUES- ANTI-OURAGAN' %}</p>
+                    <p>
+                        {% blocktrans %}
+                            ISODUR est un système qui permet d’obtenir une solidité accrue,
+                            supérieure à celle d’une construction traditionnelle, en effet les murs en
+                            coffrage isolé pour béton armé continu et homogène, sont idéaux pour
+                            répondre aux normes antisismiques les plus exigeantes. Une construction
+                            avec le système ISODUR peut résister à des vents dont la vitesse peut
+                            être supérieure à 350 KLM/H, même résistance en ce qui concerne les
+                            autres catastrophes naturelles tels que les ouragans et les tornades, et
+                            autres types de phénomènes météorologiques violents, chose qui fait la
+                            différence en matière de sécurité surtout avec les changements
+                            climatiques auquel nous devons faire face aujourd’hui mais aussi dans le
+                            futur.
+                        {% endblocktrans %}
+                    </p>
+                    <ul>
+                        <li>
+                            {% trans 'AVIS TECHNIQUE EUROPÉEN' %}
+                        </li>
+                        <li>
+                            {% trans 'GARANTIE FABRIQUANT' %}
+                        </li>
+                        <li>
+                            {% trans 'ISO 9001' %}
+                        </li>
+                        <li>
+                            {% trans 'AVIS SOCOTEC' %}
+                        </li>
+                        <li>
+                            {% trans 'AVIS CSTB' %}
+                        </li>
+                        <li>
+                            {% trans 'AVIS TECNITAS' %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Window SÉCURITÉ ET DURABILITÉ SUPÉRIEUR End -->
+
+    <!--Modal Window RAPIDITE  -->
+    <div id="rapidite" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        {% blocktrans %}
+                            La légèreté du système ISODUR est impressionnante et affiche « un
+                            poids plume » 1 mètre linéaire de mur courant pèse 1 kg et les
+                            dimensions du bloc standard sont de 1,25 m de longueur et 30 cm de
+                            hauteur, ce qui permet un montage express.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Les blocs s’emboitent à sec, sans colle ni mortier, par rangs successifs
+                            jusqu’à la hauteur du mur souhaitée, une fois les murs montés grâce à
+                            une méthode très simple le remplissage et le coulage du béton à la
+                            pompe se fera à hauteur d’étage, n’oubliez pas qu’une fois le béton mis
+                            en place dans les coffrages, l’isolation est du coup terminé. Le noyau de
+                            béton ISODUR rend facile l’installation des portes et des fenêtres et
+                            voilà votre structure est prête à recevoir la finition. Le système de
+                            construction ISODUR coffrage isolé en béton armé permet une
+                            construction considérablement plus rapide (20m2/Heure) en toute
+                            sécurité. Permettant de réaliser un gain de temps significatif par rapport
+                            aux méthodes de constructions traditionnelles actuellement utilisées au
+                            Maroc.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Notre système de construction ISODUR, vous permettra non seulement
+                            de réduire le temps de travail et de rester dans les délais, mais aussi de
+                            maintenir votre budget avec une réduction des intérêts intercalaires grâce
+                            à une disponibilité rapide de votre maison.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window RAPIDITE End -->
+    <!--Modal Window  ISODUR UN MUR QUI RESPIRE -->
+    <div id="respire" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        {% blocktrans %}
+                            La résistance à l’humidité est contrôlée par la haute densité du produit.
+                            Le polystyrène expansé à cellules fermées est capable d’absorber 125 ml
+                            d’humidité par m2, en hiver et d’en restituer trois fois plus en été, ce qui
+                            donne des murs parfaitement sains et secs.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Le polystyrène expansé à cellules fermées est même utilisé pour
+                            construire des quais flottants.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Tous les risques d’avoir l’apparition de moisissure à l’intérieur de votre
+                            habitation sont éliminés grâce au système ISODUR sur tout pour les
+                            bâtiments dans les villes côtières.
+                        {% endblocktrans %}
+                    </p>
+                    <p>{% trans 'Le système ISODUR absorbe moins que 2 % d’humidité.' %}</p>
+                    <img src="{% static 'advantege/modal/chart.png' %}" alt="chart">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window  ISODUR UN MUR QUI RESPIRE End -->
+    <!--Modal Window DIMINUTION DU RISQUE DE FISSURES -->
+    <div id="diminution" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        {% blocktrans %}
+                            Le béton armé PROTÉGÉ avec le système ISODUR, devient un produit
+                            inerte dans ce mur composite, ce qui élimine donc le risque possible de
+                            fissures dans les murs, contrairement à une maison traditionnelle qui nit
+                            toujours par bouger et fissurer.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Une construction avec le système ISODUR ne se déforme pas et ne se
+                            dégrade pas. Elle minimise donc les frais d’entretien au cours des
+                            années. La qualité de construction supérieure se traduira par une plus
+                            grande valeur de revente de l’immeuble.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window DIMINUTION DU RISQUE<br>DE FISSURES End -->
+
+    <!--Modal Window RESISTANCE AU FEU CLASSE M1 -->
+    <div id="resistage" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        {% blocktrans %}
+                            Les murs ISODUR coffrage isolé en béton armé continu et de la mousse
+                            de polystyrène expansées d’une qualité auto-extinction, (self-
+                            extinguishing) ce que signifie que le matériel n’active pas la flamme. Les
+                            murs ISODUR ne contiennent pas de CFC ou de HCFC, ils ne dégagent
+                            donc pas de matière toxique. Le Béton contenu dans les coffrages a une
+                            résistance au feu de 3 heures et plus.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Lors d’un incendie, les dégâts sont grandement limités grâce du béton
+                            continu à l’intérieur des coffrages, cette stabilité structurelle réduit le
+                            risque d’effondrement du bâtiment
+                        {% endblocktrans %}
+                    </p>
+                    <img src="{% static 'advantege/modal/resistanse.png' %}" alt="number">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window RESISTANCE AU FEU CLASSE M1 End -->
+    <!--Modal Window GAIN DE SURFACE HABITABLE -->
+    <div id="gain" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        {% blocktrans %}
+                            Aucun doublage pour les murs extérieurs n’est nécessaire, L’épaisseur
+                            des murs, isolation comprise, est de 25 cm ce qui permet un gain
+                            appréciable de surface habitable (3 à 5 m2 sur 150m2).
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window GAIN DE SURFACE HABITABLE End -->
+    <!--Modal Window A L’ÉPREUVE SUR LES RONGEURS -->
+    <div id="les" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        {% blocktrans %}
+                            ISODUR n’a aucun attrait pour les rongeurs, il ne c’est susceptible
+                            d’être choisi pour les rongeurs qui y peuvent s’en nourrir d’aucune
+                            façon. Les termites et creusent leurs galeries pour se mettre au chaud.
+                            Fourmies détestant le béton, elles préfèrent le bois.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window A L’ÉPREUVE SUR LES RONGEURSEnd -->
+    <!--Modal Window ISODUR ET LA SANTE -->
+    <div id="la_sante" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p class="title_advantage_modal">
+                        «{% blocktrans %} 
+                        Le polystyrène composant les éléments
+                        ISODUR, Est l’unique et seul matériau de
+                        construction qui ne dégage aucune radioactivité
+                    {% endblocktrans %}»
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Le polystyrène composant les éléments ISODUR est l’unique et seul
+                            matériau de construction qui ne dégage aucun rayonnement radioactif, ni
+                            rayonnement Alpha, Beta, ou Gamma, c’est un produit pur et neutre,
+                            sans additif chimique dangereux pour l’homme.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Le polystyrène composant les éléments répond également aux normes
+                            alimentaires très strictes, pour l’emballage des aliments.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Le système ISODUR ne comporte aucun risque sanitaire et ne favorise
+                            pas la croissance des moisissures, il garantie un environnement plus
+                            propre et plus sécuritaire, sur tout pour les personnes allergiques.
+                        {% endblocktrans %}
+                    </p>
+                    <img src="{% static 'advantege/modal/number.png' %}" alt="number">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window ISODUR ET LA SANTE End -->
+    <!--Modal Window ECOLOGIE ET ECONOMIES D’ENERGIE -->
+    <div id="ecologie" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        {% blocktrans %}
+                            L’utilisation du système ISODUR permet de réaliser d’importantes
+                            économies d’énergie, de répondre parfaitement aux nouvelles
+                            réglementations au Maroc visant à réduire les émissions de CO2 et de
+                            contribuer ainsi à la protection de notre environnement.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            ISODUR système c’est un matériau sain, neutre, qui permet de réduire
+                            vos besoins de chauffage et de climatisation. Par conséquent, tous vos
+                            rejets de gaz à effet de serre liés à la production de chaud ou de froid
+                            sont fortement réduits.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Le system ISODUR est vraiment « écologique » car il évite les pertes
+                            thermiques au lieu d’essayer de les compenser par des moyens de
+                            chauffage plus ou moins performants.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            ISODUR HOUSE est une entreprise soucieuse de l’environnement
+                            Si votre choix s’est porté sur un modèle HQE, passive ou BBC, optez
+                            pour ISODUR HOUSE
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window ECOLOGIE ET ECONOMIES D’ENERGIE End -->
+    <!--Modal Window LA FINITION SUR LES MURS ISODUR N’A DE LIMITE QUE DANS VOTRE IMAGINATIONE -->
+    <div id="La" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p class="title_advantage_modal">
+                        «{% blocktrans %}
+                        Avec ISODUR on peut construire n’importe quel
+                        style ou model
+                         {% endblocktrans %}»
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Les murs ISODUR permettent la pose de tout type de finition extérieure
+                            comme intérieure et du sol au plafond, c’est un matériel qui laisse une
+                            totale liberté au constructeur.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Le client n’a pas à se soucier de choisir ses produits de finition intérieure
+                            ou extérieure, ISODUR s’adapte à tous types de finition
+                        {% endblocktrans %}:<br>
+                        {% blocktrans %}
+                            Brique, pierres, stucco, enduit, peinture, tadelakt, plafond en gypse,
+                            parquet, marbre, carrelage, ex...
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            La construction avec ISODUR HOUSE offre une infinité de possibilités
+                            architecturales, murcintres, plafonds en voute, planchers de grande
+                            portée et fenêtres de grande dimension ou de forme spéciale peuvent être
+                            intégrés à la création architecturale.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window LA FINITION SUR LES MURS ISODUR N’A DE LIMITE QUE DANS VOTRE IMAGINATIONE End -->
+    <!--Modal Window  LES ECONOMIE avec ISODUR HOUSE -->
+    <div id="les_econimie" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <ol>
+                        <li>
+                            - {% trans 'jusqu’a 90 % d’économie en besoin de chauffage et de climatisation a vie' %}</li>
+                        <li> - {% trans 'Economie sur installation des climatiseurs et chauffages centrales' %}</li>
+                        <li> - {% trans 'Economisé du temps et disponibilité rapide de votre maison' %}</li>
+                        <li> - {% trans 'Gain sur loyer et intérêts intercalaires' %}</li>
+                        <li> - {% blocktrans %}
+                            Une construction avec ISODUR HOUSE ne se déforme pas et ne se
+                            dégrade pas (pas de fissures et pas de moisissure). Elle minimise donc
+                            les frais d’entretien au cours des années
+                        {% endblocktrans %}
+                        </li>
+                        <li> - {% trans 'Gain de surface habitable' %}</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window ECOLOGIE ET ECONOMIES D’ENERGIE End -->
+    <!--Modal Window  Q & R -->
+    <div id="qr" class="modal fade bd-example-modal-lg animated pulse" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="wrapper_modal_advantages" class="modal-content">
+                <img class="close top_position" data-dismiss="modal" aria-label="Close" src="{% static 'close.svg' %}"
+                     alt="close">
+                <div id="advantages_modal" class="modal-content testimonial_modal">
+                    <p>
+                        <span class="bold_text_q">Q.
+                            {% blocktrans %}
+                                Est-ce qu’il faut un architecte spécialisé ou un plant Différent pour une construction
+                                avec
+                                le
+                                système ISODUR ?
+                            {% endblocktrans %}
+                        </span>
+                    </p>
+                    <p><span class="bold_text_q">R.</span>
+                        {% blocktrans %}
+                            Non, la simplicité du système est très pratique pour
+                            n’importe
+                            quel
+                            architecte et les plans conventionnels peuvent être utilisés. De plus, tous
+                            les styles sont possibles
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        <span class="bold_text_q">Q.
+                            {% blocktrans %}
+                                Y a t-il une limite au nombre d’étages ?
+                            {% endblocktrans %}
+                        </span>
+                    </p>
+                    <p><span class="bold_text_q">R.</span>
+                        {% blocktrans %}
+                            Le nombre d’étages ou la hauteur du bâtiment sont seulement
+                            limités par la conception structurelle et de la législation locale.
+                            Il n’y a pas de limite de hauteur. Un ingénieur en structure est, en règle
+                            générale, impliqué dans le design du bâtiment.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        <span class="bold_text_q">Q.
+                            {% blocktrans %}
+                                Comment sont installées les portes et fenêtres ?
+                            {% endblocktrans %}
+                        </span>
+                    </p>
+                    <p><span class="bold_text_q">R.</span>
+                        {% blocktrans %}
+                            Une fois le béton mis en place, les portes et fenêtres sont
+                            installées
+                            de façon conventionnelle à l’intérieur des faux cadres.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        <span class="bold_text_q">Q.
+                            {% blocktrans %}
+                                Est-ce que ISODUR est conforme aux standards de
+                                construction au Maroc ?
+                            {% endblocktrans %}
+                        </span>
+                    </p>
+                    <p><span class="bold_text_q">R.
+                    </span> {% trans 'Oui. Il est même supérieur aux normes.' %}
+                    <p>
+                        <span class="bold_text_q">Q.
+                            {% trans ' Est-ce que le système ISODUR est-il un produit « vert»' %}
+                         </span>
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Oui. La méthode préconisée par les constructions utilisant les coffrages
+                            isolants ISODUR se veut des plus écologiques : le polystyrène ne
+                            contient aucun CFC ; les éléments de coffrage restent incorporés à la
+                            structure diminuant ainsi les rebuts de chantier ; l’utilisation noble et
+                            réduite du bois permet de protéger nos forêts. Tout rebut de coffrage
+                            isolant provenant du chantier est 100% recyclable. Également, la faible
+                            consommation énergétique d’une construction ISODUR entraîne une
+                            diminution des émissions polluantes qui contribuent au réchauffement
+                            planétaire et causent d’autres problèmes environnementaux. Il ne s’agit
+                            là que de quelques-unes des raisons pour lesquelles ISODUR est un
+                            système innovateur respectant l’environnement.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        <span class="bold_text_q">Q.
+                            {% blocktrans %}
+                                Est-ce que je peux visiter une maison construite avec le système ISODUR HOUSE au Maroc ?
+                            {% endblocktrans %}
+                        </span>
+                    </p>
+                    <p><span class="bold_text_q">R.</span>
+                        {% blocktrans %}
+                            Oui, il vous su t de nous contactez par mail ou par téléphone un
+                            commercial aura le plaisir de vous faire visité notre projet pilote.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Window Q & R End -->
+</section>

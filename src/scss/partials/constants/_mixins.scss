@@ -1,0 +1,23 @@
+/* Position mixins */
+@mixin flex-wrapper($justify, $items, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $items;
+  flex-direction: $direction;
+}
+
+@mixin flex-inside($grow, $shrink, $basis) {
+  flex: $grow, $shrink, $basis;
+}
+
+@mixin max-width($max-width: 1024px, $margin: 0 auto) {
+  max-width: $max-width;
+  margin: $margin;
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}

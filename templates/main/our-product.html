@@ -1,0 +1,42 @@
+{% load staticfiles i18n %}
+
+<section id="products" class="our-product-wrapper">
+    <div class="product-description_">
+        <h4>{% trans 'Our' %} <span>{% trans 'Produits' %}</span></h4>
+    </div>
+    <div class="product-section-wrapper">
+        <a class="item-products" href="{% url 'product1' %}">
+            <img class="product-ic" src="{% static 'icon3.png' %}" alt="icon_1">
+            <h4>{% trans 'des blocs de coffrages' %}</h4>
+            <p>
+                {% blocktrans %}
+                    Nos coffrages isolants ISODUR HOUSE procurent aux architectes, dessinateurs,
+                    propriétaires et
+                {% endblocktrans %}
+                ...</p>
+        </a>
+
+        <a class="item-products" href="{% url 'product2' %}">
+            <img class="product-ic" src="{% static 'icon2.png' %}" alt="icon_2">
+            <h4>{% trans 'Plaque de polystyrene' %}</h4>
+            <p>
+                {% blocktrans %}
+                    Quelles que soient leur dimension ou leur épaisseur, les panneaux de
+                    polystyrène expansé peuvent
+                {% endblocktrans %}
+                ...</p>
+        </a>
+
+        <a class="item-products" href="{% url 'product3' %}">
+            <img class="product-ic" src="{% static 'icon1.png' %}" alt="icon_3">
+            <h4>{% trans 'D’autre produit en polystyrene' %}</h4>
+            <p>
+                {% blocktrans %}
+                    Les blocs de polystyrène expansé ISODUR BOX sont disponibles pour
+                    différentes densités et sont
+                {% endblocktrans %}
+                ...</p>
+        </a>
+    </div>
+</section>
+
